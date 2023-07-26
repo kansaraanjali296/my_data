@@ -1,0 +1,58 @@
+def truncate_string(s, max_length):
+    """
+    Truncates the given string to the maximum length without cutting off any words.
+    """
+    if len(s) <= max_length:
+        return s
+
+    truncated = s[:max_length]
+    last_space = truncated.rfind(' ')
+    if last_space != -1:
+        truncated = truncated[:last_space]
+
+    return truncated
+
+
+tender_notice_no=truncate_string(tender_notice_no,100)
+Tender_ID = truncate_string (Tender_ID,800)
+City= truncate_string (City,160)
+Country= truncate_string (Country,400)
+tender_notice_no= truncate_string (tender_notice_no,299)
+notice_type= truncate_string (notice_type,100)
+est_cost= truncate_string (est_cost,100)
+open_date= truncate_string (open_date,1600)
+Financier= truncate_string (Financier,1000)
+tender_doc_file= truncate_string (tender_doc_file,800)
+source= truncate_string (source,50)
+TPosting_Id= truncate_string (TPosting_Id,500)
+Download_File= truncate_string (Download_File,800)
+Modification_File= truncate_string (Modification_File,200)
+cpv= truncate_string (cpv,500)
+AddConsultant= truncate_string (AddConsultant,500)
+AddContractor= truncate_string (AddContractor,500)
+PrjPhase= truncate_string (PrjPhase,100)
+PrjSubPhase= truncate_string (PrjSubPhase,100)
+PrjCapacity= truncate_string (PrjCapacity,1000)
+FacilityType= truncate_string (FacilityType,250)
+PeriodContract= truncate_string (PeriodContract,100)
+Events= truncate_string (Events,1000)
+BiddersSection= truncate_string (BiddersSection,1000)
+Language= truncate_string (Language,10)
+#ProcType= truncate_string (ProcType,1)
+PrjStatus= truncate_string (PrjStatus,50)
+emd_value= truncate_string (emd_value,8)
+emd_currency= truncate_string (emd_currency,3)
+doc_cost_currency= truncate_string (doc_cost_currency,3)
+bid_bond_amt= truncate_string (bid_bond_amt,8)
+bid_bond_currency= truncate_string (bid_bond_currency,3)
+eligibility_criteria= truncate_string (eligibility_criteria,999)
+parent_id= truncate_string (parent_id,8)
+latitude= truncate_string (latitude,8)
+longitude= truncate_string (longitude,8)
+designation= truncate_string (designation,99)
+
+
+
+
+
+
